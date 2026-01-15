@@ -1,21 +1,14 @@
 # Workforce-Analytics-Dashboard-PowerBI
 
-![image](https://github.com/krrusha/MNC-HR-Data-Analysis/images/Dashboard-1.png)
+![image](https://github.com/krrusha/MNC-HR-Data-Analysis/blob/main/images/Dashboard-1.png)
 
-![image](https://github.com/krrusha/MNC-HR-Data-Analysis/images/Dashboard-2.png)
+![image](https://github.com/krrusha/MNC-HR-Data-Analysis/blob/main/images/Dashboard-2.png)
 
 ## Data Used
 
 **Data Source** - https://www.kaggle.com/datasets/rohitgrewal/hr-data-mnc
 
 This dataset contains HR information for employees of a multinational corporation (MNC). It includes 2 million employee records with details about personal identifiers, job-related attributes,                                 performance, employment status and salary information.
-
-
-## Tools Used
-
-**Data Cleaning & Transformation** – Power Query (Power BI)  
-**Data Modeling & Analysis** – DAX + Data Model (Power BI)  
-**Data Visualization** – Power BI  
 
 
 ## Questions
