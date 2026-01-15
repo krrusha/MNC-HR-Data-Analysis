@@ -1,8 +1,8 @@
 # Workforce-Analytics-Dashboard-PowerBI
 
-![image](https://github.com/krrusha/krrusha.github.io/blob/main/workforce-analysis-powerbi/images/Dashboard-1.png)
+![image](https://github.com/krrusha/MNC-HR-Data-Analysis/images/Dashboard-1.png)
 
-![image](https://github.com/krrusha/krrusha.github.io/blob/main/workforce-analysis-powerbi/images/Dashboard-2.png)
+![image](https://github.com/krrusha/MNC-HR-Data-Analysis/images/Dashboard-2.png)
 
 ## Data Used
 
