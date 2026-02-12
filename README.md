@@ -1,27 +1,48 @@
-# Workforce-Analytics-Dashboard-PowerBI
+# Workforce Analytics Dashboard (Power BI)
 
-![image](https://github.com/krrusha/MNC-HR-Data-Analysis/blob/main/images/Dashboard-1.png)
-
-![image](https://github.com/krrusha/MNC-HR-Data-Analysis/blob/main/images/Dashboard-2.png)
-
-## Data Used
-
-**Data Source** - https://www.kaggle.com/datasets/rohitgrewal/hr-data-mnc
-
-This dataset contains HR information for employees of a multinational corporation (MNC). It includes 2 million employee records with details about personal identifiers, job-related attributes,                                 performance, employment status and salary information.
+Interactive HR analytics dashboard built in **Power BI** to explore workforce composition, compensation patterns, hiring trends, and attrition signals for a multinational company dataset (~2M records). The report uses **Power Query** for data prep and **DAX** for measures to support fast, slice-and-dice analysis.
 
 
-## Questions
 
-1) What is the distribution of Employee Status ?
-2) What is the distribution of work modes ?
-3) How many employees are there in each department ?
-4) What is the average salary by Department ?
-5) Find the top 5 paying roles and the bottom 5 paying roles.
-6) How does salary vary with years of experience ?
-7) Which Countries have the highest concentration of Active employees ?
-8) Is there a correlation between performance rating and salary ?
-9) Where do most employees fall on the pay scale?
-10) How many employees are hired each year?
-11) How many employees Resigned in each department ?
+## Dashboard Preview
+
+![Dashboard Page 1](images/Dashboard-1.png)
+![Dashboard Page 2](images/Dashboard-2.png)
+
+
+
+## Case Study (visual write-up)
+
+https://krrusha.github.io/MNC-HR-Data-Analysis/
+
+> Note: The full interactive Power BI report is in `Workforce_Analytics_Dashboard.pbix` in this repo.
+
+
+
+## What This Dashboard Covers
+
+- **Workforce overview:** active headcount, employee status breakdown, and work mode (on-site vs. remote)
+- **Department insights:** workforce distribution, average pay by department, and department-level resignations
+- **Compensation patterns:** pay scale distribution and highest/lowest paying roles
+- **Experience vs pay:** how salary changes across years of experience
+- **Geography:** countries with the highest concentration of active employees
+- **Hiring trend:** hires by year (gross hires)
+
+
+
+## Tools Used
+
+- **Power BI**
+- **Power Query** (data cleaning & transformation)
+- **DAX** (measures / calculated columns)
+- **Data modeling** (relationships + report-ready structure)
+
+
+
+## Data Source
+
+Kaggle — HR Data (MNC)  
+https://www.kaggle.com/datasets/rohitgrewal/hr-data-mnc
+
+> This dataset contains HR information for employees of a multinational corporation (MNC). It includes 2 million employee records with details about personal identifiers, job-related attributes, performance, employment status and salary information.
 
