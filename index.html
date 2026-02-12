@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workforce Analytics Dashboard (Power BI)</title>
+
+  <!-- Match a clean, light portfolio feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#5a5a5a;
+      --border:#e9e9e9;
+      --maxw: 960px;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:"Cabin", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
+    }
+
+    main{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:40px 18px 64px;
+    }
+
+    header{ margin-bottom:28px; }
+
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 3.4vw, 44px);
+      line-height:1.05;
+      letter-spacing:-0.02em;
+      font-weight:800;
+    }
+
+    .lead{
+      margin:0 0 10px;
+      font-size:18px;
+      color:var(--muted);
+      max-width: 78ch;
+    }
+
+    .note{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .divider{
+      border:0;
+      border-top:1px solid var(--border);
+      margin:26px 0;
+    }
+
+    section{ padding: 6px 0 0; }
+
+    h2{
+      margin:0 0 10px;
+      font-size:20px;
+      font-weight:500;
+      letter-spacing:-0.01em;
+    }
+
+    figure{ margin:14px 0 10px; }
+
+    img{
+      width: 100%;
+      height:auto;
+      display:block;
+      margin: 0 auto; /* centers the image */
+    }
+
+    .insights{
+      margin-top:10px;
+      padding-left:12px;
+      border-left:3px solid var(--border);
+    }
+
+    .insights-title{
+      font-weight:800;
+      margin:0 0 6px;
+    }
+
+    .insights ul{
+      margin:0 0 0 18px;
+      padding:0;
+      color:var(--muted);
+    }
+
+    .insights li{ font-size:17px; }
+
+    @media (max-width: 520px){
+      main{ padding:32px 14px 52px; }
+      .lead{ font-size:16px; }
+      h2{ font-size:18px; }
+      img{ width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Workforce Analytics Dashboard (Power BI)</h1>
+      <p class="lead">
+        Power BI project on a multinational company’s HR data with Power Query for cleaning and transformation,
+        DAX measures and calculated columns for analysis, and interactive dashboards for visualization.
+      </p>
+      <p class="note">Note: To view the interactive report, open <strong>Workforce_Analytics_Dashboard.pbix</strong> in this repository.</p>
+    </header>
+
+    <hr class="divider" />
+
+    <section id="dashboard-1">
+      <h2>Dashboard-1: Workforce Overview, Pay Patterns, and Top Countries</h2>
+
+      <figure>
+        <img
+          src="./images/Dashboard-1.png"
+          alt="Workforce Analytics Dashboard - Overview, pay across departments, experience vs pay, top countries, and pay scale distribution"
+          loading="lazy"
+        />
+      </figure>
+
+      <div class="insights">
+        <p class="insights-title">Insights</p>
+        <ul>
+          <li>Employee status is dominated by <strong>Active</strong> headcount (~1.4M), with <strong>Resigned</strong> (~0.4M) as the next largest group; <strong>Retired</strong> and <strong>Terminated</strong> are comparatively smaller (~0.1M each).</li>
+          <li>The overall <strong>average salary is ~₹897K</strong>.</li>
+          <li><strong>IT is the highest-paying department</strong> (~₹1.13M), followed by Finance (~₹0.94M), while <strong>HR and Operations sit on the lower end</strong> (~₹0.74–₹0.75M).</li>
+          <li>The dashboard highlights <strong>IT Manager</strong> as the highest paying role and <strong>HR Executive</strong> as the lowest paying role.</li>
+          <li>Average pay by experience appears <strong>fairly stable across 0–15 years</strong>, with only modest variation rather than a steep year-by-year climb.</li>
+          <li>Active headcount is most concentrated in <strong>Congo (11,560)</strong> and <strong>Korea (11,471)</strong>, followed by Switzerland (5,910), Monaco (5,886), and New Zealand (5,883).</li>
+          <li>The pay distribution is <strong>heavily concentrated in the lower portion</strong> of the normalized salary range, with a <strong>long tail</strong> toward the top end (fewer high earners).</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="dashboard-2">
+      <h2>Dashboard-2: Work Mode Split, Hiring Trend, Department Mix, and Resignations</h2>
+
+      <figure>
+        <img
+          src="./images/Dashboard-2.png"
+          alt="Workforce Analytics Dashboard - Work mode split, hires each year, resignations by department, and department-wise workforce distribution"
+          loading="lazy"
+        />
+      </figure>
+
+      <div class="insights">
+        <p class="insights-title">Insights</p>
+        <ul>
+          <li>The active workforce is primarily <strong>on-site (~840K / ~60%)</strong>, with a significant <strong>remote (~561K / ~40%)</strong> segment.</li>
+          <li>Gross hiring shows a <strong>steady upward trend from 2010 through 2025</strong>, reaching a <strong>total of ~2M hires</strong> (as shown, resignations/retirements/terminations are not deducted in this view).</li>
+          <li><strong>IT is the largest department</strong> (~0.6M), followed by Sales (~0.4M) and Operations (~0.3M); <strong>R&amp;D is the smallest</strong> (~0.1M).</li>
+          <li>Resignations (by headcount) are highest in <strong>IT</strong>, with <strong>Sales and Operations</strong> also contributing sizable resignation volumes; <strong>R&amp;D is lowest</strong>.</li>
+          <li>Resignation rates are <strong>tightly clustered around ~19.7%–20.2%</strong> across departments, suggesting broadly similar attrition pressure, with slight variation by team.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
